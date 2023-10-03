@@ -1,1 +1,9 @@
-
+name: push-to-main
+run-name: user of the username ${{ github.actor }} is the triggering actor for this workflow!
+on: [push]
+jobs:
+  self-hosted-job:
+    runs-on: [self-hosted]
+    steps:
+      - run: echo testing..testing..123
+    
